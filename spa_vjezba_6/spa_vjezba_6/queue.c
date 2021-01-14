@@ -49,8 +49,6 @@ void fix_down(Queue* q, int r) {
 	if ((d >= q->velicina_trenutna)&&(l>=q->velicina_trenutna)) {
 		return;
 	}
-	//treba provjeriti jeli livo i desno dijete postoje
-	//koji je veci po prioritetu
 	if (d >= q->velicina_trenutna) {
 		if (q->buffer[l].prioritet < q->buffer[r].prioritet) {
 			temp = q->buffer[l];
